@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="./style.css">    
+</head>
+<body>
+
+
+    <h1>Catálogo de Filmes</h1>
+
+
+    <div>
+        <h2>Cadastrar Novo Filme</h2>
+        <label for="nome">Nome do filme:</label>
+        <input type="text" id="nome" placeholder="Insira o nome do filme">
+
+
+        <label for="classificacao">Classificação indicativa:</label>
+        <input type="text" id="classificacao" placeholder="Ex: Livre, 12 anos, etc.">
+
+
+        <label for="duracao">Duração (minutos):</label>
+        <input type="number" id="duracao" placeholder="Duração em minutos">
+
+
+        <label for="genero">Gênero:</label>
+        <input type="text" id="genero" placeholder="Ex: Ação, Comédia, Drama, etc.">
+
+
+        <label for="ano">Ano de lançamento:</label>
+        <input type="number" id="ano" placeholder="Ano de lançamento">
+
+
+        <label for="sinopse">Sinopse:</label>
+        <textarea id="sinopse" rows="4" placeholder="Insira a sinopse do filme"></textarea>
+
+        <label for="sinopse">Trailer:</label>
+        <textarea id="trailer" rows="4" placeholder="Insira o link do Trailer do filme"></textarea>
+
+
+        <button onclick="cadastrarFilme()">Cadastrar Filme</button>
+        <button onclick="atualizarFilme()" id="btn-atualizar" style="display:none;">Atualizar Filme</button>
+    </div>
+
+
+    <div>
+        <h2>Buscar Filme por Nome</h2>
+        <input type="text" id="busca" placeholder="Digite o nome do filme">
+        <button onclick="buscarFilme()">Buscar</button>
+    </div>
+
+
+    <div>
+        <h2>Todos os Filmes Cadastrados</h2>
+        <button onclick="listarFilmes()">Exibir Todos os Filmes</button>
+
+
+        <div id="lista-filmes" class="filmes-lista"></div>
+    </div>
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+</body>
+</html>
