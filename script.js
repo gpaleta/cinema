@@ -10,7 +10,7 @@ let catalogo = [];
             const genero = document.getElementById('genero').value;
             const ano = document.getElementById('ano').value;
             const sinopse = document.getElementById('sinopse').value;
-            const trailer = document.getElementById('trailer')
+            const trailer = document.getElementById('trailer').value;
 
             if (nome && classificacao && duracao && genero && ano && sinopse && trailer) {
                 const novoFilme = {
@@ -96,6 +96,7 @@ let catalogo = [];
             document.getElementById('genero').value = '';
             document.getElementById('ano').value = '';
             document.getElementById('sinopse').value = '';
+            document.getElementById('trailer').value = '';
             document.getElementById('btn-atualizar').style.display = 'none';
             filmeEditando = null;
         }
